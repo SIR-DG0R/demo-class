@@ -18,8 +18,17 @@ body {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+}
+.empty{
+	height: 1vh;
+	width: 100vw;
+	background-color: black;
+}
 
-
+.logo-nav{
+	position: fixed;
+	top: 0;
+	width: 100vw;
 }
 .nav-logo{
 	color: white;
@@ -27,27 +36,16 @@ body {
 	text-align: center;
 	padding-top: 1.3em;
 }
+
+
 .nav-bar-list{
 	display: flex;
 	justify-content: center;
-
-
 }
-
-.nav-bar {
-  position: sticky;
-   top: 0;
-   left: 0;
- 
-}
-
-
-
-
 .nav-item{
 	list-style-type: none;
 	padding-right: 15px;
-	padding-top: 10px;
+  margin-top: 40px;
 }
 .nav-link{
 	text-decoration: none;
@@ -82,12 +80,17 @@ span {
 }
 
 .first-section {
-	display: flex;
 	background-image:url(./images/broken_noise.png);
 	width: 100vw;
-	height: 60vh;
+	height: 100vh;
 	padding-top: 50px;
 
+}
+.first-section-container{
+	display: flex;
+	margin-top: 70px;
+	align-items: center;
+	justify-content: center;
 }
 
 .about-image {
@@ -98,7 +101,7 @@ span {
 .restaurant-area {
 	margin: right;
 	width: 450px;
-	margin-left: 250px;
+	margin-left: 150px;
 
 }
 
@@ -267,9 +270,296 @@ li {
 
 .main-icon {
 	display: flex;
-	justify-content: center;`
-
+	justify-content: center;
 }
 
 
-	
+@media(min-width: 993px) and (max-width:1200px){
+	.nav-logo{
+		font-size: 3em;
+	}
+	.nav-link{
+		font-size: 1.4em;
+		padding-left: 20px;
+	}
+	.nav-item{
+		margin-top: 20px;
+	}
+	.hero-para {
+    font-size: 30px;
+    margin-top: 40px;
+
+	}
+	.first-section{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+	.about-image {
+    width: 450px;
+    height: 300px;
+    margin-bottom: 80px;
+}
+	.restaurant-area {
+    width: 420px;
+    height: 400px;
+    margin-left: 100px;
+  }
+
+  .last-para {
+    color: grey;
+    text-align: center;
+    margin-top: -80px;
+	}
+}
+
+
+
+@media(min-width: 769px) and (max-width:992px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav-item{
+		margin-top: 15px;
+	}
+	.hero-heading {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    font-family: 'Open Sans', sans-serif;
+	}
+
+.first-section{
+    height: 80vh;    
+}
+.about-image {
+    width: 350px;
+    height: 318px;
+    margin-top: -60px;
+    margin-right: 15px;
+  }
+  .restaurant-area{
+    margin-top: -60px;
+    margin-left: 15px;
+    width: 350px;
+  }
+/*first-section ends here*/
+
+.container{
+	height: 85vw;
+}
+  .div1, .div2, .div3, .div4 {
+    width: 187px;
+  }
+  .image5, .image6, .image7 {
+    width: 200px;
+    height: 150px;
+}
+  .div5, .div6, .div7 {
+    width: 200px;
+    height: 400px;
+    background-position: center;
+    margin: 10px;
+  }
+  .general-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+	} 
+}
+
+
+@media(min-width: 577px) and (max-width:768px){
+	.nav-item{
+		margin-top: 15px;
+	}
+	.hero-heading {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    font-family: 'Open Sans', sans-serif;
+	}
+
+	.first-section{
+    height: 120vh;
+}
+.first-section-container {
+    flex-direction: column;
+}
+.about-image {
+    width: 400px;
+    height: 300px;
+    margin-top: -60px;
+  }
+  .restaurant-area{
+    margin-top: 22px;
+    margin-left: 10px;
+    width: 400px;
+  }
+/*first-section ends here*/
+
+.container{
+	height: 130vw;
+}
+  .div1, .div2{
+    margin-top: 90px;
+    width: 187px;
+    position: relative;
+   	left: 200px;
+    bottom: 100px;
+  }
+
+  .div3, .div4{
+    margin-top: 90px;
+    width: 187px;
+    position: relative;
+    right: 175px;
+    top: 200px;
+  }
+  .div1{
+  	position: relative;
+  	left: 150px;
+  }
+
+  .div3{
+  	position: relative;
+  	right: 228px;
+  }
+
+  .second-container {
+    display: flex;
+    padding-top: 50px;
+    background-color: black;
+    width: 100vw;
+    height: 170vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+  .image5, .image6, .image7 {
+    width: 200px;
+    height: 150px;
+}
+  .div5, .div6, .div7 {
+    width: 200px;
+    height: 400px;
+    background-position: center;
+    margin: 10px;
+  }
+  .general-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 12px;
+  }
+
+    .last-para {
+    color: grey;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+
+
+	} 
+}
+
+@media(min-width: 0px) and (max-width: 576px){
+	.nav-item{
+		margin-top: 13px;
+		
+	}
+	.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 8px;
+    margin: -5px;
+}
+
+	.hero-heading {
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    font-family: 'Open Sans', sans-serif;
+	}
+
+	.first-section{
+    height: 120vh;
+}
+.first-section-container {
+    flex-direction: column;
+}
+.about-image {
+    width: 200px;
+    height: 100px;
+    margin-top: -60px;
+  }
+  .restaurant-area{
+    margin-top: 22px;
+    margin-left: 10px;
+    width: 200px;
+  }
+/*first-section ends here*/
+
+.container{
+	height: 700vw;
+	display: flex;
+	flex-wrap: wrap;
+}
+ .div1{
+ 		margin-top: -30px;
+}
+.div2{
+	margin-top: -450px;
+}
+.div3{
+	margin-top: -425px;
+}
+.div4{
+	margin-top: -575px;
+}
+
+  .second-container{
+    display: flex;
+    padding-top: 50px;
+    background-color: black;
+    width: 100vw;
+    height: 250vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+  .image5, .image6, .image7 {
+    width: 200px;
+    height: 150px;
+}
+  .div5, .div6, .div7 {
+    width: 200px;
+    height: 400px;
+    background-position: center;
+    margin: 10px;
+  }
+  .general-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 12px;
+  }
+
+    .last-para {
+    color: grey;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+
+
+	} 
+}
